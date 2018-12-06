@@ -1,25 +1,25 @@
 package struct;
 
-import java.util.List;
+import java.util.Set;
 
 public interface Graph<T> {
 
     void addVertex(T vertex);
 
-    void addEdge(int vertex, T value);
+    void addEdge(int vertex1, int vertex2);
 
     void deleteVertex(int vertex);
 
-    void deleteEdge(int vertex, T value);
+    void deleteEdge(int vertex1, int vertex2);
 
-    boolean hasEdge(int vertex, T value);
+    boolean hasEdge(int vertex1, int vertex2);
 
     int amoutOfEdges();
 
     int order();
 
-    T vertexAt(int vertex);
+    Set<T> getAdyacencyList(int vertex);
 
-    List<T> getAdyacencyList(int vertex);
+    T getVertex(int vertex);
 
 }
