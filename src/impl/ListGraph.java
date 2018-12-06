@@ -105,7 +105,7 @@ public class ListGraph<T> implements Graph<T> {
     }
 
     /**
-     * Methof of O(1) that returns the total amount of edges that the graph has.
+     * Method of O(1) that returns the total amount of edges that the graph has.
      *
      * @return amount of edges.
      */
@@ -115,7 +115,7 @@ public class ListGraph<T> implements Graph<T> {
     }
 
     /**
-     * Methof of O(1) that returns the total amount of vertices that the graph has.
+     * Method of O(1) that returns the total amount of vertices that the graph has.
      *
      * @return amount of vertices.
      */
@@ -148,7 +148,7 @@ public class ListGraph<T> implements Graph<T> {
      */
     @Override
     public T getVertex(int vertex) {
-        if(!edges.keySet().isEmpty() && vertex < n) {
+        if(!edges.keySet().isEmpty() && vertex < n && vertex >= 0) {
             List<T> auxList = new ArrayList<>(edges.keySet());
             return auxList.get(vertex);
         } else {

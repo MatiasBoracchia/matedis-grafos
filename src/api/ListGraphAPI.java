@@ -9,10 +9,14 @@ import java.util.Set;
 
 public class ListGraphAPI {
 
+    public ListGraphAPI() {
+
+    }
+
     /**
      * Method that returns a randomized Integer List Graph with a given amount of vertices and edges.
      *
-     * @param degree amount of vertices.
+     * @param degree        amount of vertices.
      * @param amountOfEdges amount of edges.
      * @return randomized Integer List Graph.
      */
@@ -74,7 +78,7 @@ public class ListGraphAPI {
      * Method that iterates through a given graph in BFS form, printing the index of each vertex.
      *
      * @param graph graph to iterate in BFS.
-     * @param s starting vertex value.
+     * @param s     starting vertex value.
      */
     public static void BFS(ListGraph<Integer> graph, int s) {
         System.out.println();
